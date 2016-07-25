@@ -11,7 +11,7 @@ function tree(obj) {
   console.log('🎅❄️ Here\'s your tree 🎄⛄️');
 
   for (let i = 0; i < obj.height; i++) {
-    str = ' '.repeat(obj.height - i).concat(obj.char.repeat(toAdd));
+    str = ' '.repeat(obj.height - i + 1).concat(obj.char.repeat(toAdd));
     toAdd += 2;
     console.log('%c' + str, 'color: #2CA441;');
   }
